@@ -4,9 +4,9 @@ const jobSchema = new mongoose.Schema({
   jobId: String,
   title: String,
   company: String,
-  location: {
+  location:{
     type: String,
-    index : true
+    index:true
   },
   employment_type: String,
   experience: String,

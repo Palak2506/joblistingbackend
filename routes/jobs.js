@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const { location, page = 1, limit = 10 } = req.query;
+    const { location, page = 1, limit = 5 } = req.query;
 
     const filter = {};
     if (location) {
